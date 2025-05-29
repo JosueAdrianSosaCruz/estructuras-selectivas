@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main(){
+	int edad;
+	string sexo;
+	float pulsaciones;
+	cout<<"Ingrese su edad: ";
+	cin>>edad;
+	cout<<"Ingrese su sexo (Masculino o Femenino): ";
+	cin>>sexo;
+	
+	if (sexo=="Masculino") {
+		pulsaciones=(210-edad)/10;
+		cout<<"Numero de pulsaciones por cada 10 segundos de ejercicio es: "<<pulsaciones<<endl;
+	}else if (sexo=="Femenino"){
+		pulsaciones=(220-edad)/10;
+		cout<<"Numero de pulsaciones por cada 10 segundos de ejercicio es: "<<pulsaciones<<endl;
+	}else{
+		cout<<"Sexo no valido"<<endl;
+	}
+	return 0;
+}
