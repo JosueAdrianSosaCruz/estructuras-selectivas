@@ -3,34 +3,38 @@ using namespace std;
 
 int main() {
     float cal1, cal2, cal3, promedio;
-
-    cout << "Ingresa la primera calificaci贸n: ";
+    cout<<"================================="<<endl;
+	cout<<"       EVALUACION DEL CURSO"<<endl;
+	cout<<"================================="<<endl<<endl;
+    cout << "Ingresa la primera calificacion: "<<endl;
     cin >> cal1;
-    if (cal1 < 0 || cal1 > 100) {
-        cout << "Calificaci贸n inv谩lida." << endl;
+    if (cal1 < 0 or cal1 > 100) {
+        cout << "Calificacion invalida, debe ubicarse entre (0-100)" << endl;
         return 1;
     }
 
-    cout << "Ingresa la segunda calificaci贸n: ";
+    cout << "Ingresa la segunda calificacion: "<< endl;
     cin >> cal2;
-    if (cal2 < 0 || cal2 > 100) {
-        cout << "Calificaci贸n inv谩lida." << endl;
+    if (cal2 < 0 or cal2 > 100) {
+        cout << "Calificacion invalida, debe ubicarse entre (0-100)" << endl;
         return 1;
     }
 
-    cout << "Ingresa la tercera calificaci贸n: ";
+    cout << "Ingresa la tercera calificacion: "<< endl;
     cin >> cal3;
-    if (cal3 < 0 || cal3 > 100) {
-        cout << "Calificaci贸n inv谩lida." << endl;
+    cout<<""<<endl;
+    if (cal3 < 0 or cal3 > 100) {
+        cout << "Calificacion invalida, debe ubicarse entre (0-100)." << endl;
         return 1;
     }
 
     promedio = (cal1 + cal2 + cal3) / 3;
-
+    
+	cout<<"PROMEDIO FINAL"<<endl;
     if (promedio >= 70) {
-        cout << "El alumno aprueba con promedio de " << promedio << endl;
+        cout << "ELICIDADES! el alumno logro aprobar el curso con un promedio de " << promedio <<"."<<endl;
     } else {
-        cout << "El alumno reprueba con promedio de " << promedio << endl;
+        cout << "Lamento informar que el alumno reprobo el curso con un promedio de " << promedio <<"."<< endl;
     }
 
     return 0;
